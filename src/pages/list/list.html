@@ -3,21 +3,29 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Calcular IMC</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  <ion-card>
+    <ion-card-header>
+       Calcular IMC
+    </ion-card-header>
+    <ion-card-content>
+        A continuación, ingresa los siguientes datos:
+    </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      <ion-label color="primary">Estatura (cms)</ion-label>
+      <ion-input type="text" [(ngModel)]="estatura"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Peso</ion-label>
+      <ion-input type="text" [(ngModel)]="peso"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button block color="primary" (click)="calcular()">Calcular</button>
+    </ion-item>
 </ion-content>
