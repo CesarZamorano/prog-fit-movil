@@ -1,25 +1,22 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { Ens1Page } from '../ens1/ens1';
+import { Ens2Page } from '../ens2/ens2';
 
-/**
- * Generated class for the DietaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
-  selector: 'page-dieta',
-  templateUrl: 'dieta.html',
+  selector: 'page-home',
+  templateUrl: 'dieta.html'
 })
 export class DietaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
+    pasarpagina(){
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DietaPage');
+      this.navCtrl.push(Ens1Page)
+    }
+    pasarpagina1(){
+
+      this.navCtrl.push(Ens2Page)
+    }
   }
-
-}

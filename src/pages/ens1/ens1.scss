@@ -1,0 +1,43 @@
+page-ens1 {
+
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.5em;
+          width: 100%;
+          font-weight: bold;
+          color: white;
+        }
+      
+        .card-subtitle {
+          font-size: 1.5em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: white;
+        }
+      
+        .card-titletext {
+            position: absolute;
+            top: 36%;
+            font-size: 2.5em;
+            width: 100%;
+            font-weight: bold;
+            color: black;
+          }
+
+        
+      }
+      ul li {
+        float:left;
+        padding: 0px;
+        margin: 0px;
+        }
+}

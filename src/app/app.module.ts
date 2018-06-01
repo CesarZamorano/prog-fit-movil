@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { DietaPage } from '../pages/dieta/dieta';
 import { EjercicioPage } from '../pages/ejercicio/ejercicio';
 import { DescansoPage } from '../pages/descanso/descanso';
+import { Ens1Page } from '../pages/ens1/ens1';
+import { Ens2Page } from '../pages/ens2/ens2';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +22,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     DietaPage,
     EjercicioPage,
-    DescansoPage
+    DescansoPage,
+    Ens1Page,
+    Ens2Page
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     DietaPage,
     EjercicioPage,
-    DescansoPage
+    DescansoPage,
+    Ens1Page,
+    Ens2Page
   ],
   providers: [
     StatusBar,
